@@ -10,6 +10,10 @@ services:
       - odoo-web-data:/var/lib/odoo
       - ./config:/etc/odoo
       - ./addons:/mnt/addons
+      - ./requirements.txt:/tmp/requirements.txt
+    command: >
+      bash -c "pip3 install -r /tmp/requirements.txt &&
+               /entrypoint.sh odoo"
   db:
     image: postgres:15
     environment:

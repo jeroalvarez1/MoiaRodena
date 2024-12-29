@@ -1,0 +1,7 @@
+num2words
+xlrd
+xlsxwriter
+pandas
+pyldap
+phonenumbers
+reportlab
