@@ -11,6 +11,7 @@ services:
       - ./config:/etc/odoo
       - ./addons:/mnt/addons
       - ./requirements.txt:/tmp/requirements.txt
+      -  ./filestore:/var/lib/odoo/filestore
     command: >
       bash -c "pip3 install -r /tmp/requirements.txt &&
                /entrypoint.sh odoo"
