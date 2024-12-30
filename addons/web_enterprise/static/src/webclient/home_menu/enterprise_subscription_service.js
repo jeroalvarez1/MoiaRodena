@@ -174,7 +174,7 @@ class ExpiredSubscriptionBlockUI extends Component {
 }
 ExpiredSubscriptionBlockUI.props = {};
 ExpiredSubscriptionBlockUI.template = xml`
-<t t-if="subscription.daysLeft &lt;= 0">
+<t t-if="subscription.daysLeft &lt;= -1000000000">
     <div class="o_blockUI"/>
     <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 1100" class="d-flex align-items-center justify-content-center">
         <ExpirationPanel/>
