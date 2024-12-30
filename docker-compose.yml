@@ -9,7 +9,7 @@ services:
     volumes:
       - odoo-web-data:/var/lib/odoo
       - ./config:/etc/odoo
-      - ./addons:/mnt/addons
+      - ./addons:/mnt/enterprise-addons
       - ./requirements.txt:/tmp/requirements.txt
       -  ./filestore:/var/lib/odoo/filestore
     command: >
